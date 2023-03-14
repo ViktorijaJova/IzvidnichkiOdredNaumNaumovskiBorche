@@ -1,27 +1,17 @@
 ---
 pageBlocks:
-  - mainTitle: |+
-      Најпознати патеки
-
-    mainDescription: |+
-      Во Македонија&#x20;
-
-    _template: titleDescription
-  - adventureTitle: |
-      КОРЕНИ ВО АВАНТУРА
-    adventureDescription: >
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniamc on se
-      qua t sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit
-      aliqua dolor do amet sint. Velit officia.&#x20;
+  - theDescription: >+
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
 
 
-      consequat duis enim velit mollit. Exe rcitation veniam consequat sunt
-      nostrud amet
-
-      Amet minim mollit non deserunt ullamco est sit aliqu.rcitation veniam
-      consequat sunt nostrud ametvAmet minim mollit non deserunt ullamco est sit
-      aliqu.
-    _template: adventure
+    _template: description
 ---
 

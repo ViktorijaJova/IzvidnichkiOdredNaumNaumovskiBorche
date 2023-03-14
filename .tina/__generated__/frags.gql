@@ -44,6 +44,9 @@ fragment PagesParts on Pages {
       mainTitle
       mainDescription
     }
+    ... on PagesPageBlocksDescription {
+      theDescription
+    }
     ... on PagesPageBlocksHomepageHero {
       title
       description

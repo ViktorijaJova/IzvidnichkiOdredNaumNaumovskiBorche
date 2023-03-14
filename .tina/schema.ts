@@ -39,6 +39,18 @@ const TitleDescriptionTemplate: TinaTemplate = {
   ],
 };
 
+const DescriptionTemplate: TinaTemplate = {
+  label: ' Description Block',
+  name: 'description',
+  fields: [
+  
+    {
+      label: 'Description',
+      name: 'theDescription',
+      type: 'rich-text',
+    },
+  ],
+};
 const AdventureTemplate: TinaTemplate = {
   label: 'Adventure Block ',
   name: 'adventure',
@@ -470,7 +482,7 @@ export default defineSchema({
           name: "pageBlocks",
           type: "object",
           list: true,
-          templates: [SpacingBlockTemplate,TitleDescriptionTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
+          templates: [SpacingBlockTemplate,TitleDescriptionTemplate,DescriptionTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
         },
       ],
     },

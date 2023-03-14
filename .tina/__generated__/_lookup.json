@@ -35,6 +35,7 @@
     "typeMap": {
       "spacing": "PagesPageBlocksSpacing",
       "titleDescription": "PagesPageBlocksTitleDescription",
+      "description": "PagesPageBlocksDescription",
       "homepageHero": "PagesPageBlocksHomepageHero",
       "adventure": "PagesPageBlocksAdventure",
       "twoImages": "PagesPageBlocksTwoImages",

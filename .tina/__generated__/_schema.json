@@ -434,6 +434,28 @@
               ]
             },
             {
+              "label": " Description Block",
+              "name": "description",
+              "fields": [
+                {
+                  "label": "Description",
+                  "name": "theDescription",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "description",
+                    "theDescription"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "pageBlocks",
+                "description"
+              ]
+            },
+            {
               "label": "Homepage Hero",
               "name": "homepageHero",
               "fields": [
