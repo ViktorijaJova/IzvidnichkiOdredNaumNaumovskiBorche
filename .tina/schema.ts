@@ -1,5 +1,29 @@
 import { defineSchema, TinaTemplate } from "@tinacms/cli";
 
+const SmallHeroTemplate: TinaTemplate = {
+  label: 'Small Hero',
+  name: 'smallHero',
+  fields: [
+    {
+      label: 'Title',
+      name: 'smallHeroTitle',
+      type: 'rich-text',
+    },
+
+    {
+      label: 'Background Image',
+      name: 'smallBackgroundImage',
+      type: 'image',
+      description: 'Featured Image (1929 x 453)',
+    },
+    {
+      label: 'Background Image Alt',
+      name: 'smallBackgroundImageAlt',
+      type: 'string',
+    },
+  ],
+};
+
 const HomepageHeroTemplate: TinaTemplate = {
   label: "Homepage Hero",
   name: "homepageHero",
@@ -482,7 +506,7 @@ export default defineSchema({
           name: "pageBlocks",
           type: "object",
           list: true,
-          templates: [SpacingBlockTemplate,TitleDescriptionTemplate,DescriptionTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
+          templates: [SpacingBlockTemplate,TitleDescriptionTemplate,DescriptionTemplate,SmallHeroTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
         },
       ],
     },

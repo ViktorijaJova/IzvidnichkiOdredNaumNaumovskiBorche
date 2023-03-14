@@ -10,7 +10,7 @@ const FooterBlock = ({}: P): JSX.Element => {
   return (
     <>
     <div className="bg-[#0B1D24]">
-    <div className=" pt-20 flex justify-center">
+    <div className=" pt-20 pb-10 flex justify-center">
     <Image
             src={logo.src}
             alt="single post image"

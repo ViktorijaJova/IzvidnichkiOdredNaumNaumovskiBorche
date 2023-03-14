@@ -47,6 +47,11 @@ fragment PagesParts on Pages {
     ... on PagesPageBlocksDescription {
       theDescription
     }
+    ... on PagesPageBlocksSmallHero {
+      smallHeroTitle
+      smallBackgroundImage
+      smallBackgroundImageAlt
+    }
     ... on PagesPageBlocksHomepageHero {
       title
       description

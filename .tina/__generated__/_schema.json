@@ -456,6 +456,51 @@
               ]
             },
             {
+              "label": "Small Hero",
+              "name": "smallHero",
+              "fields": [
+                {
+                  "label": "Title",
+                  "name": "smallHeroTitle",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "smallHero",
+                    "smallHeroTitle"
+                  ]
+                },
+                {
+                  "label": "Background Image",
+                  "name": "smallBackgroundImage",
+                  "type": "image",
+                  "description": "Featured Image (1929 x 453)",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "smallHero",
+                    "smallBackgroundImage"
+                  ]
+                },
+                {
+                  "label": "Background Image Alt",
+                  "name": "smallBackgroundImageAlt",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "smallHero",
+                    "smallBackgroundImageAlt"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "pageBlocks",
+                "smallHero"
+              ]
+            },
+            {
               "label": "Homepage Hero",
               "name": "homepageHero",
               "fields": [

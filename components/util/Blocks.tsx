@@ -10,6 +10,7 @@ import LeftImageRightLinksBlock from "../blocks/LeftImageRightLinksBlock/LeftIma
 import AdventureBlock from "../blocks/AdventureBlock/AdventureBlock";
 import TitleDescriptionBlock from "../blocks/TitleDescriptionBlock/TitleDescriptionBlock";
 import DescriptionBlock from "../blocks/DescriptionBlock/DescriptionBlock";
+import SmallHeroBlock from "../blocks/SmallHeroBlock/SmallHeroBlock";
 
 
 interface P {
@@ -73,6 +74,14 @@ export const Blocks = ({pageData, blogPosts} : P) => {
                             </React.Fragment>
                           );
                         }
+                        case "PagesPageBlocksSmallHero":
+                          if (block && block.__typename) {
+                            return (
+                              <React.Fragment key={i + block.__typename}>
+                                <SmallHeroBlock {...block} />
+                              </React.Fragment>
+                            );
+                          }
                       case "PagesPageBlocksContentVideo":
                         if (block && block.__typename) {
                           return (

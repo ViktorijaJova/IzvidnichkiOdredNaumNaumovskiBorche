@@ -9,6 +9,7 @@ import { TwoImagesQuery } from "../components/blocks/TwoImagesBlock/query";
 import { AdventureBlockQuery } from "../components/blocks/AdventureBlock/query";
 import { TitleDescriptionQuery } from "../components/blocks/TitleDescriptionBlock/query";
 import { DescriptionQuery } from "../components/blocks/DescriptionBlock/query";
+import { SmallHeroQuery } from "../components/blocks/SmallHeroBlock/query";
 
 
 export const getPageQuery = gql`
@@ -35,6 +36,7 @@ export const getPageQuery = gql`
           ${AdventureBlockQuery}
           ${TitleDescriptionQuery}
           ${DescriptionQuery}
+          ${SmallHeroQuery}
         }
       }
     }

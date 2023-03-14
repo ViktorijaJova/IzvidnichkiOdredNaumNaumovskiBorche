@@ -36,6 +36,7 @@
       "spacing": "PagesPageBlocksSpacing",
       "titleDescription": "PagesPageBlocksTitleDescription",
       "description": "PagesPageBlocksDescription",
+      "smallHero": "PagesPageBlocksSmallHero",
       "homepageHero": "PagesPageBlocksHomepageHero",
       "adventure": "PagesPageBlocksAdventure",
       "twoImages": "PagesPageBlocksTwoImages",
