@@ -501,6 +501,90 @@
               ]
             },
             {
+              "label": "What You Get",
+              "name": "whatYouGet",
+              "fields": [
+                {
+                  "label": "Title",
+                  "name": "whatYouGetTitle",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "whatYouGet",
+                    "whatYouGetTitle"
+                  ]
+                },
+                {
+                  "label": "Description",
+                  "name": "whatYouGetDescription",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "whatYouGet",
+                    "whatYouGetDescription"
+                  ]
+                },
+                {
+                  "label": "Gains",
+                  "name": "gains",
+                  "type": "object",
+                  "list": true,
+                  "fields": [
+                    {
+                      "label": "Gains Name",
+                      "name": "gainsName",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "pageBlocks",
+                        "whatYouGet",
+                        "gains",
+                        "gainsName"
+                      ]
+                    },
+                    {
+                      "label": "Description",
+                      "name": "gainsDescription",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "pageBlocks",
+                        "whatYouGet",
+                        "gains",
+                        "gainsDescription"
+                      ]
+                    },
+                    {
+                      "label": "Image",
+                      "name": "gainsImage",
+                      "type": "image",
+                      "description": "Featured Image must also contain the background (247 x 323)",
+                      "namespace": [
+                        "pages",
+                        "pageBlocks",
+                        "whatYouGet",
+                        "gains",
+                        "gainsImage"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "whatYouGet",
+                    "gains"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "pageBlocks",
+                "whatYouGet"
+              ]
+            },
+            {
               "label": "Homepage Hero",
               "name": "homepageHero",
               "fields": [

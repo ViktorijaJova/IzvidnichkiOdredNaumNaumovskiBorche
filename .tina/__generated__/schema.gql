@@ -156,6 +156,18 @@ type PagesPageBlocksSmallHero {
   smallBackgroundImageAlt: String
 }
 
+type PagesPageBlocksWhatYouGetGains {
+  gainsName: String
+  gainsDescription: String
+  gainsImage: String
+}
+
+type PagesPageBlocksWhatYouGet {
+  whatYouGetTitle: JSON
+  whatYouGetDescription: JSON
+  gains: [PagesPageBlocksWhatYouGetGains]
+}
+
 type PagesPageBlocksHomepageHero {
   title: String
   description: JSON
@@ -221,7 +233,7 @@ type PagesPageBlocksLeftImageRightLinks {
   listOfMerchandise: [PagesPageBlocksLeftImageRightLinksListOfMerchandise]
 }
 
-union PagesPageBlocks = PagesPageBlocksSpacing | PagesPageBlocksTitleDescription | PagesPageBlocksDescription | PagesPageBlocksSmallHero | PagesPageBlocksHomepageHero | PagesPageBlocksAdventure | PagesPageBlocksTwoImages | PagesPageBlocksImage | PagesPageBlocksImageTwo | PagesPageBlocksContentVideo | PagesPageBlocksLeftImageRightLinks
+union PagesPageBlocks = PagesPageBlocksSpacing | PagesPageBlocksTitleDescription | PagesPageBlocksDescription | PagesPageBlocksSmallHero | PagesPageBlocksWhatYouGet | PagesPageBlocksHomepageHero | PagesPageBlocksAdventure | PagesPageBlocksTwoImages | PagesPageBlocksImage | PagesPageBlocksImageTwo | PagesPageBlocksContentVideo | PagesPageBlocksLeftImageRightLinks
 
 type Pages {
   slug: String
@@ -321,6 +333,18 @@ input PagesPageBlocksSmallHeroMutation {
   smallBackgroundImageAlt: String
 }
 
+input PagesPageBlocksWhatYouGetGainsMutation {
+  gainsName: String
+  gainsDescription: String
+  gainsImage: String
+}
+
+input PagesPageBlocksWhatYouGetMutation {
+  whatYouGetTitle: JSON
+  whatYouGetDescription: JSON
+  gains: [PagesPageBlocksWhatYouGetGainsMutation]
+}
+
 input PagesPageBlocksHomepageHeroMutation {
   title: String
   description: JSON
@@ -391,6 +415,7 @@ input PagesPageBlocksMutation {
   titleDescription: PagesPageBlocksTitleDescriptionMutation
   description: PagesPageBlocksDescriptionMutation
   smallHero: PagesPageBlocksSmallHeroMutation
+  whatYouGet: PagesPageBlocksWhatYouGetMutation
   homepageHero: PagesPageBlocksHomepageHeroMutation
   adventure: PagesPageBlocksAdventureMutation
   twoImages: PagesPageBlocksTwoImagesMutation

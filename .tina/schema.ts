@@ -1,5 +1,49 @@
 import { defineSchema, TinaTemplate } from "@tinacms/cli";
 
+
+const WhatYouGetTemplate: TinaTemplate = {
+  label: 'What You Get',
+  name: 'whatYouGet',
+  fields: [
+    {
+      label: 'Title',
+      name: 'whatYouGetTitle',
+      type: 'rich-text',
+    },
+    {
+      label: 'Description',
+      name: 'whatYouGetDescription',
+      type: 'rich-text',
+    },
+ 
+    {
+      label: 'Gains',
+      name: 'gains',
+      type: 'object',
+      list: true,
+      fields: [
+        {
+          label: 'Gains Name',
+          name: 'gainsName',
+          type: 'string',
+        },
+        {
+          label: 'Description',
+          name: 'gainsDescription',
+          type: 'string',
+        },
+        {
+          label: 'Image',
+          name: 'gainsImage',
+          type: 'image',
+          description:
+            'Featured Image must also contain the background (247 x 323)',
+        },
+      ],
+    },
+  ],
+};
+
 const SmallHeroTemplate: TinaTemplate = {
   label: 'Small Hero',
   name: 'smallHero',
@@ -506,7 +550,7 @@ export default defineSchema({
           name: "pageBlocks",
           type: "object",
           list: true,
-          templates: [SpacingBlockTemplate,TitleDescriptionTemplate,DescriptionTemplate,SmallHeroTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
+          templates: [SpacingBlockTemplate,TitleDescriptionTemplate,DescriptionTemplate,SmallHeroTemplate,WhatYouGetTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
         },
       ],
     },

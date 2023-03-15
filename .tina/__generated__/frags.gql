@@ -52,6 +52,16 @@ fragment PagesParts on Pages {
       smallBackgroundImage
       smallBackgroundImageAlt
     }
+    ... on PagesPageBlocksWhatYouGet {
+      whatYouGetTitle
+      whatYouGetDescription
+      gains {
+        __typename
+        gainsName
+        gainsDescription
+        gainsImage
+      }
+    }
     ... on PagesPageBlocksHomepageHero {
       title
       description
