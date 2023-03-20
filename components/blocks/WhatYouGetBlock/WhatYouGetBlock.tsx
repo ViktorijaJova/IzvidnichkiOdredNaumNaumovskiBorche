@@ -19,7 +19,7 @@ function WhatYouGetBlock({
   });
 
   return (
-    <div className='whatYouGetBG'>
+    <div className='whatYouGetBG w-full h-full'>
       <div className="" ref={ref}>
         <div
           className="flex flex-col justify-center items-center w-full"
@@ -41,7 +41,7 @@ function WhatYouGetBlock({
         </div>
         <div id="gains">
           <ul
-            className={`grid grid-cols-1 lg:grid-cols-3 container mx-auto  ${
+            className={`grid grid-cols-1 items-center  justify-center md:gap-x-10 lg:grid-cols-3 container mx-auto  ${
               inView ? 'fade-in-bottom' : ''
             }`}
           >
@@ -56,10 +56,10 @@ function WhatYouGetBlock({
                       (item?.gainsName && item.gainsName + index) ||
                       'Gains' + index
                     }
-                    className="flex flex-col bg-white gap-x-10 items-center px-2 my-8 text-center md:mx-auto"
+                    className="flex flex-col bg-white rounded-md items-center px-2 my-8 text-center md:mx-auto"
                   >
                     <div>
-                      <div className="mb-4   w-full  h-full rounded-full md:my-10 md:w-[244px] md:max-w-full  md:h-[244px] md:max-h-full">
+                      <div className=" w-full   h-full my-10 ">
                         <Image
                           src={item?.gainsImage || avatar.src}
                           alt=''
@@ -69,9 +69,9 @@ function WhatYouGetBlock({
                           height="323px"
                         />
                       </div>
-                      <div className="flex flex-col -mt-5 md:mt-20">
-                        <h3 className="text-2xl">{item?.gainsName}</h3>
-                        <p className=" text-base">{item?.gainsDescription}</p>
+                      <div className="flex flex-col mt-0 md:mt-10 mb-5 md:mb-20">
+                        <h3 className=" text-xl mt-10 md:text-2xl">{item?.gainsName}</h3>
+                        <p className=" text-base mt-5">{item?.gainsDescription}</p>
                       </div>
                     </div>
                   </li>

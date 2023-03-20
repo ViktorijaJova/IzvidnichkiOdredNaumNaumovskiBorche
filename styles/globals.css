@@ -17,6 +17,10 @@ body {
   background-image: url('../components/blocks/WhatYouGetBlock/assets/bg.png');
 }
 
+
+.whatYouGetBGMobile {
+  background-image: url('../components/blocks/WhatYouGetBlock/assets/mobile.png');
+}
 a {
   color: inherit;
   text-decoration: none;
