@@ -40,6 +40,10 @@ fragment PagesParts on Pages {
     ... on PagesPageBlocksSpacing {
       size
     }
+    ... on PagesPageBlocksArticlesBlog {
+      articleNo
+      filterQuery
+    }
     ... on PagesPageBlocksTitleDescription {
       mainTitle
       mainDescription

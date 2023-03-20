@@ -401,6 +401,39 @@
               ]
             },
             {
+              "label": "Articles Blog",
+              "name": "articlesBlog",
+              "fields": [
+                {
+                  "label": "Number of Articles",
+                  "name": "articleNo",
+                  "type": "number",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "articlesBlog",
+                    "articleNo"
+                  ]
+                },
+                {
+                  "label": "Filter projects by tag",
+                  "name": "filterQuery",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "articlesBlog",
+                    "filterQuery"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "pageBlocks",
+                "articlesBlog"
+              ]
+            },
+            {
               "label": "Title Description Block",
               "name": "titleDescription",
               "fields": [

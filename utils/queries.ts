@@ -11,6 +11,7 @@ import { TitleDescriptionQuery } from "../components/blocks/TitleDescriptionBloc
 import { DescriptionQuery } from "../components/blocks/DescriptionBlock/query";
 import { SmallHeroQuery } from "../components/blocks/SmallHeroBlock/query";
 import { WhatYouGetQuery } from "../components/blocks/WhatYouGetBlock/query";
+import { ArticlesBlogQuery } from "../components/blocks/ArticlesBlogBlock/query";
 
 
 export const getPageQuery = gql`
@@ -39,6 +40,7 @@ export const getPageQuery = gql`
           ${DescriptionQuery}
           ${SmallHeroQuery}
           ${WhatYouGetQuery}
+          ${ArticlesBlogQuery}
         }
       }
     }

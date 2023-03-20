@@ -1,3 +1,4 @@
+
 import React from "react";
 import type { GetPagesDocumentQuery,GetBlogPostDocumentQuery } from "../../.tina/__generated__/types";
 import SpacingBlock from "../blocks/SpacingBlock/SpacingBlock";
@@ -12,6 +13,7 @@ import TitleDescriptionBlock from "../blocks/TitleDescriptionBlock/TitleDescript
 import DescriptionBlock from "../blocks/DescriptionBlock/DescriptionBlock";
 import SmallHeroBlock from "../blocks/SmallHeroBlock/SmallHeroBlock";
 import WhatYouGetBlock from "../blocks/WhatYouGetBlock/WhatYouGetBlock";
+import ArticlesBlogBlock from "../blocks/ArticlesBlogBlock/ArticlesBlogBlock";
 
 
 interface P {
@@ -25,8 +27,8 @@ export const Blocks = ({pageData, blogPosts} : P) => {
     <>
       {pageData?.getPagesDocument?.data?.pageBlocks
         ? pageData?.getPagesDocument?.data?.pageBlocks?.map(
-            (block: any, i: number): JSX.Element | null => {
-              switch (block && block.__typename) {    
+          (block: any, i: number): JSX.Element | null | undefined => {
+            switch (block && block.__typename) {    
                 case "PagesPageBlocksHomepageHero":
                   if (block && block.__typename) {
                     return (
@@ -123,6 +125,18 @@ export const Blocks = ({pageData, blogPosts} : P) => {
                             </React.Fragment>
                           );
                         }
+                        case 'PagesPageBlocksArticlesBlog':
+                          if (block && block.__typename) {
+                            return (
+                              <React.Fragment key={i + block.__typename}>
+                                <ArticlesBlogBlock
+                                  blockData={block}
+                                  blogPosts={blogPosts}
+                                />
+                              </React.Fragment>
+                            );
+                          }
+                          break;
 
                 default:
                   return null;

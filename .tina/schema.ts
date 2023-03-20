@@ -44,6 +44,23 @@ const WhatYouGetTemplate: TinaTemplate = {
   ],
 };
 
+
+const ArticlesBlogTemplate: TinaTemplate = {
+  label: 'Articles Blog',
+  name: 'articlesBlog',
+  fields: [
+    {
+      label: 'Number of Articles',
+      name: 'articleNo',
+      type: 'number',
+    },
+    {
+      label: 'Filter projects by tag',
+      name: 'filterQuery',
+      type: 'string',
+    },
+  ],
+};
 const SmallHeroTemplate: TinaTemplate = {
   label: 'Small Hero',
   name: 'smallHero',
@@ -550,7 +567,7 @@ export default defineSchema({
           name: "pageBlocks",
           type: "object",
           list: true,
-          templates: [SpacingBlockTemplate,TitleDescriptionTemplate,DescriptionTemplate,SmallHeroTemplate,WhatYouGetTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
+          templates: [SpacingBlockTemplate,ArticlesBlogTemplate,TitleDescriptionTemplate,DescriptionTemplate,SmallHeroTemplate,WhatYouGetTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
         },
       ],
     },
