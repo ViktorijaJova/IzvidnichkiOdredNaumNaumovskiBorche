@@ -434,6 +434,50 @@
               ]
             },
             {
+              "label": "PDF Block",
+              "name": "pdf",
+              "fields": [
+                {
+                  "label": "PDF Title",
+                  "name": "pdfTitle",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "pdf",
+                    "pdfTitle"
+                  ]
+                },
+                {
+                  "label": "PDF Button",
+                  "name": "pdfButton",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "pdf",
+                    "pdfButton"
+                  ]
+                },
+                {
+                  "label": " PDFImage",
+                  "name": "pdfIcon",
+                  "type": "image",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "pdf",
+                    "pdfIcon"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "pageBlocks",
+                "pdf"
+              ]
+            },
+            {
               "label": "Title Description Block",
               "name": "titleDescription",
               "fields": [

@@ -44,6 +44,27 @@ const WhatYouGetTemplate: TinaTemplate = {
   ],
 };
 
+const PdfTemplate: TinaTemplate = {
+  label: 'PDF Block',
+  name: 'pdf',
+  fields: [
+    {
+      label: 'PDF Title',
+      name: 'pdfTitle',
+      type: 'rich-text',
+    },
+    {
+      label: 'PDF Button',
+      name: 'pdfButton',
+      type: 'rich-text',
+    },
+        {
+          label: ' PDFImage',
+          name: 'pdfIcon',
+          type: 'image'
+        },
+      ],
+    };
 
 const ArticlesBlogTemplate: TinaTemplate = {
   label: 'Articles Blog',
@@ -567,7 +588,7 @@ export default defineSchema({
           name: "pageBlocks",
           type: "object",
           list: true,
-          templates: [SpacingBlockTemplate,ArticlesBlogTemplate,TitleDescriptionTemplate,DescriptionTemplate,SmallHeroTemplate,WhatYouGetTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
+          templates: [SpacingBlockTemplate,ArticlesBlogTemplate,PdfTemplate,TitleDescriptionTemplate,DescriptionTemplate,SmallHeroTemplate,WhatYouGetTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
         },
       ],
     },

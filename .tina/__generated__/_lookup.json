@@ -35,6 +35,7 @@
     "typeMap": {
       "spacing": "PagesPageBlocksSpacing",
       "articlesBlog": "PagesPageBlocksArticlesBlog",
+      "pdf": "PagesPageBlocksPdf",
       "titleDescription": "PagesPageBlocksTitleDescription",
       "description": "PagesPageBlocksDescription",
       "smallHero": "PagesPageBlocksSmallHero",

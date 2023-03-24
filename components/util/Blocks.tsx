@@ -14,6 +14,7 @@ import DescriptionBlock from "../blocks/DescriptionBlock/DescriptionBlock";
 import SmallHeroBlock from "../blocks/SmallHeroBlock/SmallHeroBlock";
 import WhatYouGetBlock from "../blocks/WhatYouGetBlock/WhatYouGetBlock";
 import ArticlesBlogBlock from "../blocks/ArticlesBlogBlock/ArticlesBlogBlock";
+import PdfBlock from "../blocks/PdfBlock/PdfBlock";
 
 
 interface P {
@@ -61,6 +62,14 @@ export const Blocks = ({pageData, blogPosts} : P) => {
                           </React.Fragment>
                         );
                       }
+                      case "PagesPageBlocksPdf":
+                        if (block && block.__typename) {
+                          return (
+                            <React.Fragment key={i + block.__typename}>
+                              <PdfBlock {...block} />
+                            </React.Fragment>
+                          );
+                        }
                     case "PagesPageBlocksImage":
                       if (block && block.__typename) {
                         return (

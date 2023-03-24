@@ -44,6 +44,11 @@ fragment PagesParts on Pages {
       articleNo
       filterQuery
     }
+    ... on PagesPageBlocksPdf {
+      pdfTitle
+      pdfButton
+      pdfIcon
+    }
     ... on PagesPageBlocksTitleDescription {
       mainTitle
       mainDescription

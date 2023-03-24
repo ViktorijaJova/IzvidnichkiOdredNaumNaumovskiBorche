@@ -146,6 +146,12 @@ type PagesPageBlocksArticlesBlog {
   filterQuery: String
 }
 
+type PagesPageBlocksPdf {
+  pdfTitle: JSON
+  pdfButton: JSON
+  pdfIcon: String
+}
+
 type PagesPageBlocksTitleDescription {
   mainTitle: JSON
   mainDescription: JSON
@@ -238,7 +244,7 @@ type PagesPageBlocksLeftImageRightLinks {
   listOfMerchandise: [PagesPageBlocksLeftImageRightLinksListOfMerchandise]
 }
 
-union PagesPageBlocks = PagesPageBlocksSpacing | PagesPageBlocksArticlesBlog | PagesPageBlocksTitleDescription | PagesPageBlocksDescription | PagesPageBlocksSmallHero | PagesPageBlocksWhatYouGet | PagesPageBlocksHomepageHero | PagesPageBlocksAdventure | PagesPageBlocksTwoImages | PagesPageBlocksImage | PagesPageBlocksImageTwo | PagesPageBlocksContentVideo | PagesPageBlocksLeftImageRightLinks
+union PagesPageBlocks = PagesPageBlocksSpacing | PagesPageBlocksArticlesBlog | PagesPageBlocksPdf | PagesPageBlocksTitleDescription | PagesPageBlocksDescription | PagesPageBlocksSmallHero | PagesPageBlocksWhatYouGet | PagesPageBlocksHomepageHero | PagesPageBlocksAdventure | PagesPageBlocksTwoImages | PagesPageBlocksImage | PagesPageBlocksImageTwo | PagesPageBlocksContentVideo | PagesPageBlocksLeftImageRightLinks
 
 type Pages {
   slug: String
@@ -326,6 +332,12 @@ input PagesPageBlocksSpacingMutation {
 input PagesPageBlocksArticlesBlogMutation {
   articleNo: Float
   filterQuery: String
+}
+
+input PagesPageBlocksPdfMutation {
+  pdfTitle: JSON
+  pdfButton: JSON
+  pdfIcon: String
 }
 
 input PagesPageBlocksTitleDescriptionMutation {
@@ -423,6 +435,7 @@ input PagesPageBlocksLeftImageRightLinksMutation {
 input PagesPageBlocksMutation {
   spacing: PagesPageBlocksSpacingMutation
   articlesBlog: PagesPageBlocksArticlesBlogMutation
+  pdf: PagesPageBlocksPdfMutation
   titleDescription: PagesPageBlocksTitleDescriptionMutation
   description: PagesPageBlocksDescriptionMutation
   smallHero: PagesPageBlocksSmallHeroMutation

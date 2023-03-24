@@ -12,6 +12,7 @@ import { DescriptionQuery } from "../components/blocks/DescriptionBlock/query";
 import { SmallHeroQuery } from "../components/blocks/SmallHeroBlock/query";
 import { WhatYouGetQuery } from "../components/blocks/WhatYouGetBlock/query";
 import { ArticlesBlogQuery } from "../components/blocks/ArticlesBlogBlock/query";
+import { PdfQuery } from "../components/blocks/PdfBlock/query";
 
 
 export const getPageQuery = gql`
@@ -27,7 +28,7 @@ export const getPageQuery = gql`
             content
           }
         }
-        pageBlocks {          
+        pageBlocks {   
           ${HomepageHeroQuery}
           ${SpacingBlockQuery}
           ${TwoImagesQuery}
@@ -41,6 +42,8 @@ export const getPageQuery = gql`
           ${SmallHeroQuery}
           ${WhatYouGetQuery}
           ${ArticlesBlogQuery}
+          ${PdfQuery}       
+
         }
       }
     }
