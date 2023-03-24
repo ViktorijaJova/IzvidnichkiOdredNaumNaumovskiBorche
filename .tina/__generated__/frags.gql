@@ -44,6 +44,30 @@ fragment PagesParts on Pages {
       articleNo
       filterQuery
     }
+    ... on PagesPageBlocksContactPage {
+      contactTitle
+      contactEmailIcon
+      contactEmailIconAlt
+      contactPhoneIcon
+      contactPhoneIconAlt
+      contactAddressIcon
+      contactAddressIconAlt
+      openingHoursIcon
+      openingHoursIconAlt
+      contactEmail
+      contactPhone
+      contactAddress
+      openingHours
+      contactButton
+      contactSecondButton
+      contactLink
+      contactInstagram
+      contactInstagramAlt
+      contactFacebook
+      contactFacebookAlt
+      contactLinkedin
+      contactLinkedinAlt
+    }
     ... on PagesPageBlocksPdf {
       pdfTitle
       pdfButton

@@ -13,6 +13,7 @@ import { SmallHeroQuery } from "../components/blocks/SmallHeroBlock/query";
 import { WhatYouGetQuery } from "../components/blocks/WhatYouGetBlock/query";
 import { ArticlesBlogQuery } from "../components/blocks/ArticlesBlogBlock/query";
 import { PdfQuery } from "../components/blocks/PdfBlock/query";
+import { ContactPageQuery } from "../components/blocks/ContactPageBlock/query";
 
 
 export const getPageQuery = gql`
@@ -42,7 +43,8 @@ export const getPageQuery = gql`
           ${SmallHeroQuery}
           ${WhatYouGetQuery}
           ${ArticlesBlogQuery}
-          ${PdfQuery}       
+          ${PdfQuery}   
+          ${ContactPageQuery}    
 
         }
       }

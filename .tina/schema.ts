@@ -65,6 +65,131 @@ const PdfTemplate: TinaTemplate = {
         },
       ],
     };
+    const ContactPageTemplate: TinaTemplate = {
+      label: 'Contact Page ',
+      name: 'contactPage',
+      fields: [
+        {
+          label: 'Title',
+          name: 'contactTitle',
+          type: 'rich-text',
+        },
+        {
+          label: 'Email Icon',
+          name: 'contactEmailIcon',
+          type: 'image',
+          description: 'Featured Image (26.46 x 19.52)',
+        },
+        {
+          label: 'Email Icon Alt',
+          name: 'contactEmailIconAlt',
+          type: 'string',
+        },
+        {
+          label: 'Phone Icon',
+          name: 'contactPhoneIcon',
+          type: 'image',
+          description: 'Featured Image (26 x 25.39)',
+        },
+        {
+          label: 'Phone Icon Alt',
+          name: 'contactPhoneIconAlt',
+          type: 'string',
+        },
+        {
+          label: 'Address Icon',
+          name: 'contactAddressIcon',
+          type: 'image',
+          description: 'Featured Image (20 x 27)',
+        },
+        {
+          label: 'Address Icon Alt',
+          name: 'contactAddressIconAlt',
+          type: 'string',
+        },
+        {
+          label: 'Opening Hours Icon',
+          name: 'openingHoursIcon',
+          type: 'image',
+          description: 'Featured Image (22 x 22)',
+        },
+        {
+          label: 'Opening Hours Icon Alt',
+          name: 'openingHoursIconAlt',
+          type: 'string',
+        },
+    
+        {
+          label: 'Email',
+          name: 'contactEmail',
+          type: 'string',
+        },
+        {
+          label: 'Phone',
+          name: 'contactPhone',
+          type: 'string',
+        },
+        {
+          label: 'Address',
+          name: 'contactAddress',
+          type: 'string',
+        },
+        {
+          label: 'Opening Hours',
+          name: 'openingHours',
+          type: 'rich-text',
+        },
+        {
+          label: 'Button',
+          name: 'contactButton',
+          type: 'string',
+        },
+        {
+          label: 'Title Button',
+          name: 'contactSecondButton',
+          type: 'rich-text',
+        },
+        {
+          label: 'Link',
+          name: 'contactLink',
+          type: 'string',
+        },
+    
+        {
+          label: 'Instagram Icon',
+          name: 'contactInstagram',
+          type: 'image',
+          description: 'Featured Image (30.91 x 31.11)',
+        },
+        {
+          label: 'Instagram Icon Alt',
+          name: 'contactInstagramAlt',
+          type: 'string',
+        },
+        {
+          label: 'Facebook Icon',
+          name: 'contactFacebook',
+          type: 'image',
+          description: 'Featured Image (30.88 x 31.11)',
+        },
+        {
+          label: 'Facebook Icon Alt',
+          name: 'contactFacebookAlt',
+          type: 'string',
+        },
+        {
+          label: 'LinkedIn',
+          name: 'contactLinkedin',
+          type: 'image',
+          description: 'Featured Image (31.11 x 31.11)',
+        },
+        {
+          label: 'LinkedIn Icon Alt',
+          name: 'contactLinkedinAlt',
+          type: 'string',
+        },
+      ],
+    };
 
 const ArticlesBlogTemplate: TinaTemplate = {
   label: 'Articles Blog',
@@ -588,7 +713,7 @@ export default defineSchema({
           name: "pageBlocks",
           type: "object",
           list: true,
-          templates: [SpacingBlockTemplate,ArticlesBlogTemplate,PdfTemplate,TitleDescriptionTemplate,DescriptionTemplate,SmallHeroTemplate,WhatYouGetTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
+          templates: [SpacingBlockTemplate,ArticlesBlogTemplate,ContactPageTemplate,PdfTemplate,TitleDescriptionTemplate,DescriptionTemplate,SmallHeroTemplate,WhatYouGetTemplate, HomepageHeroTemplate,AdventureTemplate, TwoImagesBlockTemplate,ImageBlockTemplate,ImageTwoBlockTemplate,ContentVideoTemplate,LeftImageRightLinksTemplate],
         },
       ],
     },

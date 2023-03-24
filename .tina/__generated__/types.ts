@@ -241,6 +241,32 @@ export type PagesPageBlocksArticlesBlog = {
   filterQuery?: Maybe<Scalars['String']>;
 };
 
+export type PagesPageBlocksContactPage = {
+  __typename?: 'PagesPageBlocksContactPage';
+  contactTitle?: Maybe<Scalars['JSON']>;
+  contactEmailIcon?: Maybe<Scalars['String']>;
+  contactEmailIconAlt?: Maybe<Scalars['String']>;
+  contactPhoneIcon?: Maybe<Scalars['String']>;
+  contactPhoneIconAlt?: Maybe<Scalars['String']>;
+  contactAddressIcon?: Maybe<Scalars['String']>;
+  contactAddressIconAlt?: Maybe<Scalars['String']>;
+  openingHoursIcon?: Maybe<Scalars['String']>;
+  openingHoursIconAlt?: Maybe<Scalars['String']>;
+  contactEmail?: Maybe<Scalars['String']>;
+  contactPhone?: Maybe<Scalars['String']>;
+  contactAddress?: Maybe<Scalars['String']>;
+  openingHours?: Maybe<Scalars['JSON']>;
+  contactButton?: Maybe<Scalars['String']>;
+  contactSecondButton?: Maybe<Scalars['JSON']>;
+  contactLink?: Maybe<Scalars['String']>;
+  contactInstagram?: Maybe<Scalars['String']>;
+  contactInstagramAlt?: Maybe<Scalars['String']>;
+  contactFacebook?: Maybe<Scalars['String']>;
+  contactFacebookAlt?: Maybe<Scalars['String']>;
+  contactLinkedin?: Maybe<Scalars['String']>;
+  contactLinkedinAlt?: Maybe<Scalars['String']>;
+};
+
 export type PagesPageBlocksPdf = {
   __typename?: 'PagesPageBlocksPdf';
   pdfTitle?: Maybe<Scalars['JSON']>;
@@ -356,7 +382,7 @@ export type PagesPageBlocksLeftImageRightLinks = {
   listOfMerchandise?: Maybe<Array<Maybe<PagesPageBlocksLeftImageRightLinksListOfMerchandise>>>;
 };
 
-export type PagesPageBlocks = PagesPageBlocksSpacing | PagesPageBlocksArticlesBlog | PagesPageBlocksPdf | PagesPageBlocksTitleDescription | PagesPageBlocksDescription | PagesPageBlocksSmallHero | PagesPageBlocksWhatYouGet | PagesPageBlocksHomepageHero | PagesPageBlocksAdventure | PagesPageBlocksTwoImages | PagesPageBlocksImage | PagesPageBlocksImageTwo | PagesPageBlocksContentVideo | PagesPageBlocksLeftImageRightLinks;
+export type PagesPageBlocks = PagesPageBlocksSpacing | PagesPageBlocksArticlesBlog | PagesPageBlocksContactPage | PagesPageBlocksPdf | PagesPageBlocksTitleDescription | PagesPageBlocksDescription | PagesPageBlocksSmallHero | PagesPageBlocksWhatYouGet | PagesPageBlocksHomepageHero | PagesPageBlocksAdventure | PagesPageBlocksTwoImages | PagesPageBlocksImage | PagesPageBlocksImageTwo | PagesPageBlocksContentVideo | PagesPageBlocksLeftImageRightLinks;
 
 export type Pages = {
   __typename?: 'Pages';
@@ -496,6 +522,31 @@ export type PagesPageBlocksArticlesBlogMutation = {
   filterQuery?: InputMaybe<Scalars['String']>;
 };
 
+export type PagesPageBlocksContactPageMutation = {
+  contactTitle?: InputMaybe<Scalars['JSON']>;
+  contactEmailIcon?: InputMaybe<Scalars['String']>;
+  contactEmailIconAlt?: InputMaybe<Scalars['String']>;
+  contactPhoneIcon?: InputMaybe<Scalars['String']>;
+  contactPhoneIconAlt?: InputMaybe<Scalars['String']>;
+  contactAddressIcon?: InputMaybe<Scalars['String']>;
+  contactAddressIconAlt?: InputMaybe<Scalars['String']>;
+  openingHoursIcon?: InputMaybe<Scalars['String']>;
+  openingHoursIconAlt?: InputMaybe<Scalars['String']>;
+  contactEmail?: InputMaybe<Scalars['String']>;
+  contactPhone?: InputMaybe<Scalars['String']>;
+  contactAddress?: InputMaybe<Scalars['String']>;
+  openingHours?: InputMaybe<Scalars['JSON']>;
+  contactButton?: InputMaybe<Scalars['String']>;
+  contactSecondButton?: InputMaybe<Scalars['JSON']>;
+  contactLink?: InputMaybe<Scalars['String']>;
+  contactInstagram?: InputMaybe<Scalars['String']>;
+  contactInstagramAlt?: InputMaybe<Scalars['String']>;
+  contactFacebook?: InputMaybe<Scalars['String']>;
+  contactFacebookAlt?: InputMaybe<Scalars['String']>;
+  contactLinkedin?: InputMaybe<Scalars['String']>;
+  contactLinkedinAlt?: InputMaybe<Scalars['String']>;
+};
+
 export type PagesPageBlocksPdfMutation = {
   pdfTitle?: InputMaybe<Scalars['JSON']>;
   pdfButton?: InputMaybe<Scalars['JSON']>;
@@ -597,6 +648,7 @@ export type PagesPageBlocksLeftImageRightLinksMutation = {
 export type PagesPageBlocksMutation = {
   spacing?: InputMaybe<PagesPageBlocksSpacingMutation>;
   articlesBlog?: InputMaybe<PagesPageBlocksArticlesBlogMutation>;
+  contactPage?: InputMaybe<PagesPageBlocksContactPageMutation>;
   pdf?: InputMaybe<PagesPageBlocksPdfMutation>;
   titleDescription?: InputMaybe<PagesPageBlocksTitleDescriptionMutation>;
   description?: InputMaybe<PagesPageBlocksDescriptionMutation>;
@@ -620,7 +672,7 @@ export type PagesMutation = {
 
 export type BlogPostPartsFragment = { __typename?: 'BlogPost', slug?: string | null, locale?: string | null, mainTitle?: string | null, category?: string | null, heroImage?: string | null, date?: string | null, title?: string | null, paragraph?: any | null, hasButton?: boolean | null, button?: string | null, link?: string | null, seo?: { __typename: 'BlogPostSeo', title?: string | null, description?: string | null, meta?: Array<{ __typename: 'BlogPostSeoMeta', name?: string | null, content?: string | null } | null> | null } | null };
 
-export type PagesPartsFragment = { __typename?: 'Pages', slug?: string | null, locale?: string | null, seo?: { __typename: 'PagesSeo', title?: string | null, description?: string | null, meta?: Array<{ __typename: 'PagesSeoMeta', name?: string | null, content?: string | null } | null> | null } | null, pageBlocks?: Array<{ __typename: 'PagesPageBlocksSpacing', size?: string | null } | { __typename: 'PagesPageBlocksArticlesBlog', articleNo?: number | null, filterQuery?: string | null } | { __typename: 'PagesPageBlocksPdf', pdfTitle?: any | null, pdfButton?: any | null, pdfIcon?: string | null } | { __typename: 'PagesPageBlocksTitleDescription', mainTitle?: any | null, mainDescription?: any | null } | { __typename: 'PagesPageBlocksDescription', theDescription?: any | null } | { __typename: 'PagesPageBlocksSmallHero', smallHeroTitle?: any | null, smallBackgroundImage?: string | null, smallBackgroundImageAlt?: string | null } | { __typename: 'PagesPageBlocksWhatYouGet', whatYouGetTitle?: any | null, whatYouGetDescription?: any | null, gains?: Array<{ __typename: 'PagesPageBlocksWhatYouGetGains', gainsName?: string | null, gainsDescription?: string | null, gainsImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksHomepageHero', title?: string | null, description?: any | null, heroImage?: string | null } | { __typename: 'PagesPageBlocksAdventure', adventureTitle?: any | null, adventureDescription?: any | null, adventureImage?: string | null, adventureImageAlt?: string | null } | { __typename: 'PagesPageBlocksTwoImages', imageList?: Array<{ __typename: 'PagesPageBlocksTwoImagesImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImage', mainTitle?: any | null, imageList?: Array<{ __typename: 'PagesPageBlocksImageImageList', heroImage?: string | null, buttonTitle?: string | null, buttonLink?: string | null, mobileImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImageTwo', imageList?: Array<{ __typename: 'PagesPageBlocksImageTwoImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksContentVideo', cvideoPlayer?: string | null } | { __typename: 'PagesPageBlocksLeftImageRightLinks', bgImage?: string | null, bgImageAlt?: string | null, flip?: boolean | null, listOfMerchandise?: Array<{ __typename: 'PagesPageBlocksLeftImageRightLinksListOfMerchandise', description?: any | null, icon?: string | null, iconAlt?: string | null, link?: string | null } | null> | null } | null> | null };
+export type PagesPartsFragment = { __typename?: 'Pages', slug?: string | null, locale?: string | null, seo?: { __typename: 'PagesSeo', title?: string | null, description?: string | null, meta?: Array<{ __typename: 'PagesSeoMeta', name?: string | null, content?: string | null } | null> | null } | null, pageBlocks?: Array<{ __typename: 'PagesPageBlocksSpacing', size?: string | null } | { __typename: 'PagesPageBlocksArticlesBlog', articleNo?: number | null, filterQuery?: string | null } | { __typename: 'PagesPageBlocksContactPage', contactTitle?: any | null, contactEmailIcon?: string | null, contactEmailIconAlt?: string | null, contactPhoneIcon?: string | null, contactPhoneIconAlt?: string | null, contactAddressIcon?: string | null, contactAddressIconAlt?: string | null, openingHoursIcon?: string | null, openingHoursIconAlt?: string | null, contactEmail?: string | null, contactPhone?: string | null, contactAddress?: string | null, openingHours?: any | null, contactButton?: string | null, contactSecondButton?: any | null, contactLink?: string | null, contactInstagram?: string | null, contactInstagramAlt?: string | null, contactFacebook?: string | null, contactFacebookAlt?: string | null, contactLinkedin?: string | null, contactLinkedinAlt?: string | null } | { __typename: 'PagesPageBlocksPdf', pdfTitle?: any | null, pdfButton?: any | null, pdfIcon?: string | null } | { __typename: 'PagesPageBlocksTitleDescription', mainTitle?: any | null, mainDescription?: any | null } | { __typename: 'PagesPageBlocksDescription', theDescription?: any | null } | { __typename: 'PagesPageBlocksSmallHero', smallHeroTitle?: any | null, smallBackgroundImage?: string | null, smallBackgroundImageAlt?: string | null } | { __typename: 'PagesPageBlocksWhatYouGet', whatYouGetTitle?: any | null, whatYouGetDescription?: any | null, gains?: Array<{ __typename: 'PagesPageBlocksWhatYouGetGains', gainsName?: string | null, gainsDescription?: string | null, gainsImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksHomepageHero', title?: string | null, description?: any | null, heroImage?: string | null } | { __typename: 'PagesPageBlocksAdventure', adventureTitle?: any | null, adventureDescription?: any | null, adventureImage?: string | null, adventureImageAlt?: string | null } | { __typename: 'PagesPageBlocksTwoImages', imageList?: Array<{ __typename: 'PagesPageBlocksTwoImagesImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImage', mainTitle?: any | null, imageList?: Array<{ __typename: 'PagesPageBlocksImageImageList', heroImage?: string | null, buttonTitle?: string | null, buttonLink?: string | null, mobileImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImageTwo', imageList?: Array<{ __typename: 'PagesPageBlocksImageTwoImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksContentVideo', cvideoPlayer?: string | null } | { __typename: 'PagesPageBlocksLeftImageRightLinks', bgImage?: string | null, bgImageAlt?: string | null, flip?: boolean | null, listOfMerchandise?: Array<{ __typename: 'PagesPageBlocksLeftImageRightLinksListOfMerchandise', description?: any | null, icon?: string | null, iconAlt?: string | null, link?: string | null } | null> | null } | null> | null };
 
 export type GetBlogPostDocumentQueryVariables = Exact<{
   relativePath: Scalars['String'];
@@ -639,12 +691,12 @@ export type GetPagesDocumentQueryVariables = Exact<{
 }>;
 
 
-export type GetPagesDocumentQuery = { __typename?: 'Query', getPagesDocument: { __typename?: 'PagesDocument', id: string, sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, data: { __typename?: 'Pages', slug?: string | null, locale?: string | null, seo?: { __typename: 'PagesSeo', title?: string | null, description?: string | null, meta?: Array<{ __typename: 'PagesSeoMeta', name?: string | null, content?: string | null } | null> | null } | null, pageBlocks?: Array<{ __typename: 'PagesPageBlocksSpacing', size?: string | null } | { __typename: 'PagesPageBlocksArticlesBlog', articleNo?: number | null, filterQuery?: string | null } | { __typename: 'PagesPageBlocksPdf', pdfTitle?: any | null, pdfButton?: any | null, pdfIcon?: string | null } | { __typename: 'PagesPageBlocksTitleDescription', mainTitle?: any | null, mainDescription?: any | null } | { __typename: 'PagesPageBlocksDescription', theDescription?: any | null } | { __typename: 'PagesPageBlocksSmallHero', smallHeroTitle?: any | null, smallBackgroundImage?: string | null, smallBackgroundImageAlt?: string | null } | { __typename: 'PagesPageBlocksWhatYouGet', whatYouGetTitle?: any | null, whatYouGetDescription?: any | null, gains?: Array<{ __typename: 'PagesPageBlocksWhatYouGetGains', gainsName?: string | null, gainsDescription?: string | null, gainsImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksHomepageHero', title?: string | null, description?: any | null, heroImage?: string | null } | { __typename: 'PagesPageBlocksAdventure', adventureTitle?: any | null, adventureDescription?: any | null, adventureImage?: string | null, adventureImageAlt?: string | null } | { __typename: 'PagesPageBlocksTwoImages', imageList?: Array<{ __typename: 'PagesPageBlocksTwoImagesImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImage', mainTitle?: any | null, imageList?: Array<{ __typename: 'PagesPageBlocksImageImageList', heroImage?: string | null, buttonTitle?: string | null, buttonLink?: string | null, mobileImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImageTwo', imageList?: Array<{ __typename: 'PagesPageBlocksImageTwoImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksContentVideo', cvideoPlayer?: string | null } | { __typename: 'PagesPageBlocksLeftImageRightLinks', bgImage?: string | null, bgImageAlt?: string | null, flip?: boolean | null, listOfMerchandise?: Array<{ __typename: 'PagesPageBlocksLeftImageRightLinksListOfMerchandise', description?: any | null, icon?: string | null, iconAlt?: string | null, link?: string | null } | null> | null } | null> | null } } };
+export type GetPagesDocumentQuery = { __typename?: 'Query', getPagesDocument: { __typename?: 'PagesDocument', id: string, sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, data: { __typename?: 'Pages', slug?: string | null, locale?: string | null, seo?: { __typename: 'PagesSeo', title?: string | null, description?: string | null, meta?: Array<{ __typename: 'PagesSeoMeta', name?: string | null, content?: string | null } | null> | null } | null, pageBlocks?: Array<{ __typename: 'PagesPageBlocksSpacing', size?: string | null } | { __typename: 'PagesPageBlocksArticlesBlog', articleNo?: number | null, filterQuery?: string | null } | { __typename: 'PagesPageBlocksContactPage', contactTitle?: any | null, contactEmailIcon?: string | null, contactEmailIconAlt?: string | null, contactPhoneIcon?: string | null, contactPhoneIconAlt?: string | null, contactAddressIcon?: string | null, contactAddressIconAlt?: string | null, openingHoursIcon?: string | null, openingHoursIconAlt?: string | null, contactEmail?: string | null, contactPhone?: string | null, contactAddress?: string | null, openingHours?: any | null, contactButton?: string | null, contactSecondButton?: any | null, contactLink?: string | null, contactInstagram?: string | null, contactInstagramAlt?: string | null, contactFacebook?: string | null, contactFacebookAlt?: string | null, contactLinkedin?: string | null, contactLinkedinAlt?: string | null } | { __typename: 'PagesPageBlocksPdf', pdfTitle?: any | null, pdfButton?: any | null, pdfIcon?: string | null } | { __typename: 'PagesPageBlocksTitleDescription', mainTitle?: any | null, mainDescription?: any | null } | { __typename: 'PagesPageBlocksDescription', theDescription?: any | null } | { __typename: 'PagesPageBlocksSmallHero', smallHeroTitle?: any | null, smallBackgroundImage?: string | null, smallBackgroundImageAlt?: string | null } | { __typename: 'PagesPageBlocksWhatYouGet', whatYouGetTitle?: any | null, whatYouGetDescription?: any | null, gains?: Array<{ __typename: 'PagesPageBlocksWhatYouGetGains', gainsName?: string | null, gainsDescription?: string | null, gainsImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksHomepageHero', title?: string | null, description?: any | null, heroImage?: string | null } | { __typename: 'PagesPageBlocksAdventure', adventureTitle?: any | null, adventureDescription?: any | null, adventureImage?: string | null, adventureImageAlt?: string | null } | { __typename: 'PagesPageBlocksTwoImages', imageList?: Array<{ __typename: 'PagesPageBlocksTwoImagesImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImage', mainTitle?: any | null, imageList?: Array<{ __typename: 'PagesPageBlocksImageImageList', heroImage?: string | null, buttonTitle?: string | null, buttonLink?: string | null, mobileImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImageTwo', imageList?: Array<{ __typename: 'PagesPageBlocksImageTwoImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksContentVideo', cvideoPlayer?: string | null } | { __typename: 'PagesPageBlocksLeftImageRightLinks', bgImage?: string | null, bgImageAlt?: string | null, flip?: boolean | null, listOfMerchandise?: Array<{ __typename: 'PagesPageBlocksLeftImageRightLinksListOfMerchandise', description?: any | null, icon?: string | null, iconAlt?: string | null, link?: string | null } | null> | null } | null> | null } } };
 
 export type GetPagesListQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetPagesListQuery = { __typename?: 'Query', getPagesList: { __typename?: 'PagesConnection', totalCount: number, edges?: Array<{ __typename?: 'PagesConnectionEdges', node?: { __typename?: 'PagesDocument', id: string, sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, data: { __typename?: 'Pages', slug?: string | null, locale?: string | null, seo?: { __typename: 'PagesSeo', title?: string | null, description?: string | null, meta?: Array<{ __typename: 'PagesSeoMeta', name?: string | null, content?: string | null } | null> | null } | null, pageBlocks?: Array<{ __typename: 'PagesPageBlocksSpacing', size?: string | null } | { __typename: 'PagesPageBlocksArticlesBlog', articleNo?: number | null, filterQuery?: string | null } | { __typename: 'PagesPageBlocksPdf', pdfTitle?: any | null, pdfButton?: any | null, pdfIcon?: string | null } | { __typename: 'PagesPageBlocksTitleDescription', mainTitle?: any | null, mainDescription?: any | null } | { __typename: 'PagesPageBlocksDescription', theDescription?: any | null } | { __typename: 'PagesPageBlocksSmallHero', smallHeroTitle?: any | null, smallBackgroundImage?: string | null, smallBackgroundImageAlt?: string | null } | { __typename: 'PagesPageBlocksWhatYouGet', whatYouGetTitle?: any | null, whatYouGetDescription?: any | null, gains?: Array<{ __typename: 'PagesPageBlocksWhatYouGetGains', gainsName?: string | null, gainsDescription?: string | null, gainsImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksHomepageHero', title?: string | null, description?: any | null, heroImage?: string | null } | { __typename: 'PagesPageBlocksAdventure', adventureTitle?: any | null, adventureDescription?: any | null, adventureImage?: string | null, adventureImageAlt?: string | null } | { __typename: 'PagesPageBlocksTwoImages', imageList?: Array<{ __typename: 'PagesPageBlocksTwoImagesImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImage', mainTitle?: any | null, imageList?: Array<{ __typename: 'PagesPageBlocksImageImageList', heroImage?: string | null, buttonTitle?: string | null, buttonLink?: string | null, mobileImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImageTwo', imageList?: Array<{ __typename: 'PagesPageBlocksImageTwoImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksContentVideo', cvideoPlayer?: string | null } | { __typename: 'PagesPageBlocksLeftImageRightLinks', bgImage?: string | null, bgImageAlt?: string | null, flip?: boolean | null, listOfMerchandise?: Array<{ __typename: 'PagesPageBlocksLeftImageRightLinksListOfMerchandise', description?: any | null, icon?: string | null, iconAlt?: string | null, link?: string | null } | null> | null } | null> | null } } | null } | null> | null } };
+export type GetPagesListQuery = { __typename?: 'Query', getPagesList: { __typename?: 'PagesConnection', totalCount: number, edges?: Array<{ __typename?: 'PagesConnectionEdges', node?: { __typename?: 'PagesDocument', id: string, sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string }, data: { __typename?: 'Pages', slug?: string | null, locale?: string | null, seo?: { __typename: 'PagesSeo', title?: string | null, description?: string | null, meta?: Array<{ __typename: 'PagesSeoMeta', name?: string | null, content?: string | null } | null> | null } | null, pageBlocks?: Array<{ __typename: 'PagesPageBlocksSpacing', size?: string | null } | { __typename: 'PagesPageBlocksArticlesBlog', articleNo?: number | null, filterQuery?: string | null } | { __typename: 'PagesPageBlocksContactPage', contactTitle?: any | null, contactEmailIcon?: string | null, contactEmailIconAlt?: string | null, contactPhoneIcon?: string | null, contactPhoneIconAlt?: string | null, contactAddressIcon?: string | null, contactAddressIconAlt?: string | null, openingHoursIcon?: string | null, openingHoursIconAlt?: string | null, contactEmail?: string | null, contactPhone?: string | null, contactAddress?: string | null, openingHours?: any | null, contactButton?: string | null, contactSecondButton?: any | null, contactLink?: string | null, contactInstagram?: string | null, contactInstagramAlt?: string | null, contactFacebook?: string | null, contactFacebookAlt?: string | null, contactLinkedin?: string | null, contactLinkedinAlt?: string | null } | { __typename: 'PagesPageBlocksPdf', pdfTitle?: any | null, pdfButton?: any | null, pdfIcon?: string | null } | { __typename: 'PagesPageBlocksTitleDescription', mainTitle?: any | null, mainDescription?: any | null } | { __typename: 'PagesPageBlocksDescription', theDescription?: any | null } | { __typename: 'PagesPageBlocksSmallHero', smallHeroTitle?: any | null, smallBackgroundImage?: string | null, smallBackgroundImageAlt?: string | null } | { __typename: 'PagesPageBlocksWhatYouGet', whatYouGetTitle?: any | null, whatYouGetDescription?: any | null, gains?: Array<{ __typename: 'PagesPageBlocksWhatYouGetGains', gainsName?: string | null, gainsDescription?: string | null, gainsImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksHomepageHero', title?: string | null, description?: any | null, heroImage?: string | null } | { __typename: 'PagesPageBlocksAdventure', adventureTitle?: any | null, adventureDescription?: any | null, adventureImage?: string | null, adventureImageAlt?: string | null } | { __typename: 'PagesPageBlocksTwoImages', imageList?: Array<{ __typename: 'PagesPageBlocksTwoImagesImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImage', mainTitle?: any | null, imageList?: Array<{ __typename: 'PagesPageBlocksImageImageList', heroImage?: string | null, buttonTitle?: string | null, buttonLink?: string | null, mobileImage?: string | null } | null> | null } | { __typename: 'PagesPageBlocksImageTwo', imageList?: Array<{ __typename: 'PagesPageBlocksImageTwoImageList', heroImage?: string | null, buttonTitle?: string | null, mainTitle?: string | null, buttonLink?: string | null } | null> | null } | { __typename: 'PagesPageBlocksContentVideo', cvideoPlayer?: string | null } | { __typename: 'PagesPageBlocksLeftImageRightLinks', bgImage?: string | null, bgImageAlt?: string | null, flip?: boolean | null, listOfMerchandise?: Array<{ __typename: 'PagesPageBlocksLeftImageRightLinksListOfMerchandise', description?: any | null, icon?: string | null, iconAlt?: string | null, link?: string | null } | null> | null } | null> | null } } | null } | null> | null } };
 
 export const BlogPostPartsFragmentDoc = gql`
     fragment BlogPostParts on BlogPost {
@@ -693,6 +745,30 @@ export const PagesPartsFragmentDoc = gql`
     ... on PagesPageBlocksArticlesBlog {
       articleNo
       filterQuery
+    }
+    ... on PagesPageBlocksContactPage {
+      contactTitle
+      contactEmailIcon
+      contactEmailIconAlt
+      contactPhoneIcon
+      contactPhoneIconAlt
+      contactAddressIcon
+      contactAddressIconAlt
+      openingHoursIcon
+      openingHoursIconAlt
+      contactEmail
+      contactPhone
+      contactAddress
+      openingHours
+      contactButton
+      contactSecondButton
+      contactLink
+      contactInstagram
+      contactInstagramAlt
+      contactFacebook
+      contactFacebookAlt
+      contactLinkedin
+      contactLinkedinAlt
     }
     ... on PagesPageBlocksPdf {
       pdfTitle

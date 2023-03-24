@@ -146,6 +146,31 @@ type PagesPageBlocksArticlesBlog {
   filterQuery: String
 }
 
+type PagesPageBlocksContactPage {
+  contactTitle: JSON
+  contactEmailIcon: String
+  contactEmailIconAlt: String
+  contactPhoneIcon: String
+  contactPhoneIconAlt: String
+  contactAddressIcon: String
+  contactAddressIconAlt: String
+  openingHoursIcon: String
+  openingHoursIconAlt: String
+  contactEmail: String
+  contactPhone: String
+  contactAddress: String
+  openingHours: JSON
+  contactButton: String
+  contactSecondButton: JSON
+  contactLink: String
+  contactInstagram: String
+  contactInstagramAlt: String
+  contactFacebook: String
+  contactFacebookAlt: String
+  contactLinkedin: String
+  contactLinkedinAlt: String
+}
+
 type PagesPageBlocksPdf {
   pdfTitle: JSON
   pdfButton: JSON
@@ -244,7 +269,7 @@ type PagesPageBlocksLeftImageRightLinks {
   listOfMerchandise: [PagesPageBlocksLeftImageRightLinksListOfMerchandise]
 }
 
-union PagesPageBlocks = PagesPageBlocksSpacing | PagesPageBlocksArticlesBlog | PagesPageBlocksPdf | PagesPageBlocksTitleDescription | PagesPageBlocksDescription | PagesPageBlocksSmallHero | PagesPageBlocksWhatYouGet | PagesPageBlocksHomepageHero | PagesPageBlocksAdventure | PagesPageBlocksTwoImages | PagesPageBlocksImage | PagesPageBlocksImageTwo | PagesPageBlocksContentVideo | PagesPageBlocksLeftImageRightLinks
+union PagesPageBlocks = PagesPageBlocksSpacing | PagesPageBlocksArticlesBlog | PagesPageBlocksContactPage | PagesPageBlocksPdf | PagesPageBlocksTitleDescription | PagesPageBlocksDescription | PagesPageBlocksSmallHero | PagesPageBlocksWhatYouGet | PagesPageBlocksHomepageHero | PagesPageBlocksAdventure | PagesPageBlocksTwoImages | PagesPageBlocksImage | PagesPageBlocksImageTwo | PagesPageBlocksContentVideo | PagesPageBlocksLeftImageRightLinks
 
 type Pages {
   slug: String
@@ -332,6 +357,31 @@ input PagesPageBlocksSpacingMutation {
 input PagesPageBlocksArticlesBlogMutation {
   articleNo: Float
   filterQuery: String
+}
+
+input PagesPageBlocksContactPageMutation {
+  contactTitle: JSON
+  contactEmailIcon: String
+  contactEmailIconAlt: String
+  contactPhoneIcon: String
+  contactPhoneIconAlt: String
+  contactAddressIcon: String
+  contactAddressIconAlt: String
+  openingHoursIcon: String
+  openingHoursIconAlt: String
+  contactEmail: String
+  contactPhone: String
+  contactAddress: String
+  openingHours: JSON
+  contactButton: String
+  contactSecondButton: JSON
+  contactLink: String
+  contactInstagram: String
+  contactInstagramAlt: String
+  contactFacebook: String
+  contactFacebookAlt: String
+  contactLinkedin: String
+  contactLinkedinAlt: String
 }
 
 input PagesPageBlocksPdfMutation {
@@ -435,6 +485,7 @@ input PagesPageBlocksLeftImageRightLinksMutation {
 input PagesPageBlocksMutation {
   spacing: PagesPageBlocksSpacingMutation
   articlesBlog: PagesPageBlocksArticlesBlogMutation
+  contactPage: PagesPageBlocksContactPageMutation
   pdf: PagesPageBlocksPdfMutation
   titleDescription: PagesPageBlocksTitleDescriptionMutation
   description: PagesPageBlocksDescriptionMutation

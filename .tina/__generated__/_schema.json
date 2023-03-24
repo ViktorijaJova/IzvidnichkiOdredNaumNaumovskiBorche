@@ -434,6 +434,266 @@
               ]
             },
             {
+              "label": "Contact Page ",
+              "name": "contactPage",
+              "fields": [
+                {
+                  "label": "Title",
+                  "name": "contactTitle",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactTitle"
+                  ]
+                },
+                {
+                  "label": "Email Icon",
+                  "name": "contactEmailIcon",
+                  "type": "image",
+                  "description": "Featured Image (26.46 x 19.52)",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactEmailIcon"
+                  ]
+                },
+                {
+                  "label": "Email Icon Alt",
+                  "name": "contactEmailIconAlt",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactEmailIconAlt"
+                  ]
+                },
+                {
+                  "label": "Phone Icon",
+                  "name": "contactPhoneIcon",
+                  "type": "image",
+                  "description": "Featured Image (26 x 25.39)",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactPhoneIcon"
+                  ]
+                },
+                {
+                  "label": "Phone Icon Alt",
+                  "name": "contactPhoneIconAlt",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactPhoneIconAlt"
+                  ]
+                },
+                {
+                  "label": "Address Icon",
+                  "name": "contactAddressIcon",
+                  "type": "image",
+                  "description": "Featured Image (20 x 27)",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactAddressIcon"
+                  ]
+                },
+                {
+                  "label": "Address Icon Alt",
+                  "name": "contactAddressIconAlt",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactAddressIconAlt"
+                  ]
+                },
+                {
+                  "label": "Opening Hours Icon",
+                  "name": "openingHoursIcon",
+                  "type": "image",
+                  "description": "Featured Image (22 x 22)",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "openingHoursIcon"
+                  ]
+                },
+                {
+                  "label": "Opening Hours Icon Alt",
+                  "name": "openingHoursIconAlt",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "openingHoursIconAlt"
+                  ]
+                },
+                {
+                  "label": "Email",
+                  "name": "contactEmail",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactEmail"
+                  ]
+                },
+                {
+                  "label": "Phone",
+                  "name": "contactPhone",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactPhone"
+                  ]
+                },
+                {
+                  "label": "Address",
+                  "name": "contactAddress",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactAddress"
+                  ]
+                },
+                {
+                  "label": "Opening Hours",
+                  "name": "openingHours",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "openingHours"
+                  ]
+                },
+                {
+                  "label": "Button",
+                  "name": "contactButton",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactButton"
+                  ]
+                },
+                {
+                  "label": "Title Button",
+                  "name": "contactSecondButton",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactSecondButton"
+                  ]
+                },
+                {
+                  "label": "Link",
+                  "name": "contactLink",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactLink"
+                  ]
+                },
+                {
+                  "label": "Instagram Icon",
+                  "name": "contactInstagram",
+                  "type": "image",
+                  "description": "Featured Image (30.91 x 31.11)",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactInstagram"
+                  ]
+                },
+                {
+                  "label": "Instagram Icon Alt",
+                  "name": "contactInstagramAlt",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactInstagramAlt"
+                  ]
+                },
+                {
+                  "label": "Facebook Icon",
+                  "name": "contactFacebook",
+                  "type": "image",
+                  "description": "Featured Image (30.88 x 31.11)",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactFacebook"
+                  ]
+                },
+                {
+                  "label": "Facebook Icon Alt",
+                  "name": "contactFacebookAlt",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactFacebookAlt"
+                  ]
+                },
+                {
+                  "label": "LinkedIn",
+                  "name": "contactLinkedin",
+                  "type": "image",
+                  "description": "Featured Image (31.11 x 31.11)",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactLinkedin"
+                  ]
+                },
+                {
+                  "label": "LinkedIn Icon Alt",
+                  "name": "contactLinkedinAlt",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "pageBlocks",
+                    "contactPage",
+                    "contactLinkedinAlt"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "pageBlocks",
+                "contactPage"
+              ]
+            },
+            {
               "label": "PDF Block",
               "name": "pdf",
               "fields": [
